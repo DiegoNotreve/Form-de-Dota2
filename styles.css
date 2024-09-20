@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  height: 100vh;
+}
+
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.nick label {
+  font-family: "Protest Guerrilla", system-ui;
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  background: url("img/logofechada.jpeg") no-repeat center;
+  background-size: cover;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text;
+  margin: 20px;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: black;
+}
+
+.nick input[type="text"] {
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 300px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+h1 {
+  font-family: "Protest Guerrilla", system-ui;
+  font-size: 50px;
+  font-weight: 800;
+  text-align: center;
+  background: url("img/logofechada.jpeg") no-repeat center;
+  background-size: cover;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text;
+  margin: 20px;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: black;
+}
+
+/* --EFEITO DE TEXTO */
+h2 {
+  margin: 20px;
+  font-family: "Protest Guerrilla", system-ui;
+  font-weight: 800;
+  font-size: 40px;
+  padding: 5px 10px;
+  background: url("img/logofechada.jpeg") no-repeat center;
+  background-size: cover;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: black;
+}
+
+h3 {
+  font-family: "Protest Guerrilla", system-ui;
+  font-weight: 800;
+  padding: 5px 10px;
+  background: url("img/logofechada.jpeg") no-repeat center;
+  background-size: cover;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text;
+
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: black;
+}
+
+.nick {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  /* background-image: url('https://steamuserimages-a.akamaihd.net/ugc/581280502713388408/4954C7A5550740AA45FFC973AF97C7DED6EA692C/?imw=512&amp;imh=288&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fiAxed; */
+  backdrop-filter: blur(10px);
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  /* border: 2px solid black; */
+  height: auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+input[type="text"],
+select {
+  width: 50%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
+
+input[type="text"]:focus,
+select:focus {
+  outline: none;
+  border-color: #db3a12;
+  box-shadow: 0 0 5px #db3a12;
+}
+
+section{
+  padding: 20px;
+  position: relative;
+}
+
+section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+}
+
+.section3::after, .section4::after{
+  content: none;
+}
+
+.section8 h2,
+.section6 h2 {
+  font-size: 35px;
+  text-align: center;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.radio-group label {
+  cursor: pointer;
+}
+
+.radio-group input {
+  margin-right: 0.5rem;
+}
+
+/* CONFIG DAS MEDALHAS */
+
+.rank-options::after{
+  content: none;
+}
+.rank-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  gap: 2rem;
+}
+.rank-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.rank-option img {
+  width: 24px; /* Ajuste o tamanho conforme necessário */
+  height: 24px;
+  margin-right: 0.5rem;
+}
+/* .rank-option input[type="radio"] {
+    display: none;  */
+
+.rank-option label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.sectionarea {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgb(0, 0, 0); /* Sombra suave */
+  max-width: 600px;
+  margin: 20px auto; /* Centralizar na página */
+}
+
+.sectionarea::after{
+  content: none;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px; /* Espaçamento interno */
+  border: 1px solid #ccc; /* Borda */
+  border-radius: 4px; /* Bordas arredondadas */
+  font-size: 14px; /* Tamanho da fonte */
+  resize: none; /* Desabilitar redimensionamento */
+  transition: border-color 0.3s; /* Transição suave para foco */
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #db3a12;
+  box-shadow: 0 0 5px #db3a12;
+}
+
+button {
+  font-weight: 900;
+  font-size: 20px;
+  border: none;
+  border-radius: 4px; /* Bordas arredondadas */
+  padding: 10px 15px; /* Espaçamento interno */
+  cursor: pointer; /* Mão ao passar o mouse */
+  position: relative; /* Para posicionar elementos internos */
+  overflow: hidden; /* Para evitar transbordamento */
+  background-color: #fff;
+  margin: 15px;
+ transition: 0.2s;
+ text-decoration: none;
+}
+
+.button-text {
+  background: url("img/logofechada.jpeg") no-repeat center;
+  background-size: cover;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text;
+  display: inline-block; /* Para garantir que o efeito funcione */
+}
+
+button:hover{
+  transform: scale(1.05);
+  
+}
+
+body:after {
+	content: "";
+	min-height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: linear-gradient(120deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.05926120448179273) 50%, rgba(0, 0, 0, 1) 90%);
+	z-index: -1;
+}

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Exemplo de Questionário</title>
+  </head>
+  <body>
+    <video autoplay muted loop id="background-video">
+      <source src="video/y2mate.com - Dota 2 Logo_360p.mp4" type="video/mp4" />
+      Seu navegador não suporta o elemento de vídeo.
+    </video>
+    <!-- Cabeçalho principal da página -->
+    <header>
+      <h1 class="texto">
+        Como você vive o Dota 2? Participe do nosso Questionário!
+      </h1>
+      <!-- <img class="logo" src="img/logo-dota.png" alt="logo do dota" /> -->
+    </header>
+    <main>
+      <!-- Formulário que contém o questionário -->
+      <form action="#" method="post">
+        <div class="nick">
+          <label id="teste" for="nome">Nome / Nick:</label>
+          <input type="text" id="name" name="nome" required />
+        </div>
+
+        <!-- Pergunta com várias opções (radio buttons) -->
+        <h2 class="texto-principal">Experiência com o jogo</h2>
+        <section class="section1">
+          <h3>Há quanto tempo você joga Dota 2?</h3>
+          <div class="radio-group">
+            <label for="anos-0-4">
+              <input
+                type="radio"
+                id="anos-0-4"
+                name="tempo_jogo"
+                value="0-4"
+                required
+              />
+              0 - 4 anos
+            </label>
+          </div>
+          <div class="radio-group">
+            <label for="anos-4-8">
+              <input
+                type="radio"
+                id="anos-4-8"
+                name="tempo_jogo"
+                value="4-8"
+                required
+              />
+              4 - 8 anos
+            </label>
+          </div>
+          <div class="radio-group">
+            <label for="anos-8-11">
+              <input
+                type="radio"
+                id="anos-8-11"
+                name="tempo_jogo"
+                value="8-11"
+                required
+              />
+              8 - 11 anos
+            </label>
+          </div>
+        </section>
+
+        <!-- Pergunta com campo de seleção (dropdown) -->
+        <section class="section3">
+          <h2>Preferências de Jogo</h2>
+          <h3>Qual é a sua posição principal (role) no Dota 2?</h3>
+
+          <label for="role">Selecione: </label>
+          <select id="role" name="role">
+            <option value="Posição 0">---------</option>
+            <option value="Carry">Posição 1 | (Carry)</option>
+            <option value="Mid">Posição 2 | (Mid)</option>
+            <option value="Offlane">Posição 3 | (Offlane)</option>
+            <option value="Suporte">Posição 4 | (Suporte)</option>
+            <option value="Suporte-dedicado">
+              Posição 5 | (Suporte dedicado)
+            </option>
+          </select>
+        </section>
+
+        <section class="section4">
+          <h3>Qual é o seu herói favorito?</h3>
+
+          <label for="heroi">Selecione: </label>
+          <select id="heroi" name="heroi">
+            <option value="">---------</option>
+            <option value="Abaddon">Abaddon</option>
+            <option value="Alchemist">Alchemist</option>
+            <option value="Ancient Apparition">Ancient Apparition</option>
+            <option value="Anti-Mage">Anti-Mage</option>
+            <option value="Arc Warden">Arc Warden</option>
+            <option value="Axe">Axe</option>
+            <option value="Bane">Bane</option>
+            <option value="Batrider">Batrider</option>
+            <option value="Beastmaster">Beastmaster</option>
+            <option value="Bloodseeker">Bloodseeker</option>
+            <option value="Bounty Hunter">Bounty Hunter</option>
+            <option value="Brewmaster">Brewmaster</option>
+            <option value="Bristleback">Bristleback</option>
+            <option value="Broodmother">Broodmother</option>
+            <option value="Centaur Warrunner">Centaur Warrunner</option>
+            <option value="Chaos Knight">Chaos Knight</option>
+            <option value="Chen">Chen</option>
+            <option value="Clinkz">Clinkz</option>
+            <option value="Clockwerk">Clockwerk</option>
+            <option value="Crystal Maiden">Crystal Maiden</option>
+            <option value="Dark Seer">Dark Seer</option>
+            <option value="Dark Willow">Dark Willow</option>
+            <option value="Dawnbreaker">Dawnbreaker</option>
+            <option value="Dazzle">Dazzle</option>
+            <option value="Death Prophet">Death Prophet</option>
+            <option value="Disruptor">Disruptor</option>
+            <option value="Doom">Doom</option>
+            <option value="Dragon Knight">Dragon Knight</option>
+            <option value="Drow Ranger">Drow Ranger</option>
+            <option value="Earth Spirit">Earth Spirit</option>
+            <option value="Earthshaker">Earthshaker</option>
+            <option value="Elder Titan">Elder Titan</option>
+            <option value="Ember Spirit">Ember Spirit</option>
+            <option value="Enchantress">Enchantress</option>
+            <option value="Enigma">Enigma</option>
+            <option value="Faceless Void">Faceless Void</option>
+            <option value="Grimstroke">Grimstroke</option>
+            <option value="Gyrocopter">Gyrocopter</option>
+            <option value="Hoodwink">Hoodwink</option>
+            <option value="Huskar">Huskar</option>
+            <option value="Invoker">Invoker</option>
+            <option value="Io">Io</option>
+            <option value="Jakiro">Jakiro</option>
+            <option value="Juggernaut">Juggernaut</option>
+            <option value="Keeper of the Light">Keeper of the Light</option>
+            <option value="Kunkka">Kunkka</option>
+            <option value="Legion Commander">Legion Commander</option>
+            <option value="Leshrac">Leshrac</option>
+            <option value="Lich">Lich</option>
+            <option value="Lifestealer">Lifestealer</option>
+            <option value="Lina">Lina</option>
+            <option value="Lion">Lion</option>
+            <option value="Lone Druid">Lone Druid</option>
+            <option value="Luna">Luna</option>
+            <option value="Lycan">Lycan</option>
+            <option value="Magnus">Magnus</option>
+            <option value="Marci">Marci</option>
+            <option value="Mars">Mars</option>
+            <option value="Medusa">Medusa</option>
+            <option value="Meepo">Meepo</option>
+            <option value="Mirana">Mirana</option>
+            <option value="Monkey King">Monkey King</option>
+            <option value="Morphling">Morphling</option>
+            <option value="Naga Siren">Naga Siren</option>
+            <option value="Nature's Prophet">Nature's Prophet</option>
+            <option value="Necrophos">Necrophos</option>
+            <option value="Night Stalker">Night Stalker</option>
+            <option value="Nyx Assassin">Nyx Assassin</option>
+            <option value="Ogre Magi">Ogre Magi</option>
+            <option value="Omniknight">Omniknight</option>
+            <option value="Oracle">Oracle</option>
+            <option value="Outworld Destroyer">Outworld Destroyer</option>
+            <option value="Pangolier">Pangolier</option>
+            <option value="Phantom Assassin">Phantom Assassin</option>
+            <option value="Phantom Lancer">Phantom Lancer</option>
+            <option value="Phoenix">Phoenix</option>
+            <option value="Puck">Puck</option>
+            <option value="Pudge">Pudge</option>
+            <option value="Pugna">Pugna</option>
+            <option value="Queen of Pain">Queen of Pain</option>
+            <option value="Razor">Razor</option>
+            <option value="Ringmaster">Ringmaster</option>
+            <option value="Riki">Riki</option>
+            <option value="Rubick">Rubick</option>
+            <option value="Sand King">Sand King</option>
+            <option value="Shadow Demon">Shadow Demon</option>
+            <option value="Shadow Fiend">Shadow Fiend</option>
+            <option value="Shadow Shaman">Shadow Shaman</option>
+            <option value="Silencer">Silencer</option>
+            <option value="Skywrath Mage">Skywrath Mage</option>
+            <option value="Slardar">Slardar</option>
+            <option value="Slark">Slark</option>
+            <option value="Snapfire">Snapfire</option>
+            <option value="Sniper">Sniper</option>
+            <option value="Spectre">Spectre</option>
+            <option value="Spirit Breaker">Spirit Breaker</option>
+            <option value="Storm Spirit">Storm Spirit</option>
+            <option value="Sven">Sven</option>
+            <option value="Techies">Techies</option>
+            <option value="Templar Assassin">Templar Assassin</option>
+            <option value="Terrorblade">Terrorblade</option>
+            <option value="Tidehunter">Tidehunter</option>
+            <option value="Timbersaw">Timbersaw</option>
+            <option value="Tinker">Tinker</option>
+            <option value="Tiny">Tiny</option>
+            <option value="Treant Protector">Treant Protector</option>
+            <option value="Troll Warlord">Troll Warlord</option>
+            <option value="Tusk">Tusk</option>
+            <option value="Underlord">Underlord</option>
+            <option value="Undying">Undying</option>
+            <option value="Ursa">Ursa</option>
+            <option value="Vengeful Spirit">Vengeful Spirit</option>
+            <option value="Venomancer">Venomancer</option>
+            <option value="Viper">Viper</option>
+            <option value="Visage">Visage</option>
+            <option value="Void Spirit">Void Spirit</option>
+            <option value="Warlock">Warlock</option>
+            <option value="Weaver">Weaver</option>
+            <option value="Windranger">Windranger</option>
+            <option value="Winter Wyvern">Winter Wyvern</option>
+            <option value="Witch Doctor">Witch Doctor</option>
+            <option value="Wraith King">Wraith King</option>
+            <option value="Zeus">Zeus</option>
+          </select>
+        </section>
+
+        <section class="section5">
+          <h3>Qual é o seu modo de jogo preferido?</h3>
+          <div class="radio-group">
+            <input
+              type="radio"
+              id="modo-normal"
+              name="modo"
+              value="Normal"
+              required
+            />
+            <label for="modo-normal">Normal</label>
+          </div>
+          <div class="radio-group">
+            <input
+              type="radio"
+              id="modo-ranked"
+              name="modo"
+              value="Ranked"
+              required
+            />
+            <label for="modo-ranked">Ranked</label>
+          </div>
+          <div class="radio-group">
+            <input
+              type="radio"
+              id="modo-turbo"
+              name="modo"
+              value="Turbo"
+              required
+            />
+            <label for="modo-turbo">Turbo</label>
+          </div>
+          <div class="radio-group">
+            <input
+              type="radio"
+              id="modo-capitaes"
+              name="modo"
+              value="Capitaes"
+              required
+            />
+            <label for="modo-capitaes">Modo Capitães</label>
+          </div>
+          <div class="radio-group">
+            <input
+              type="radio"
+              id="modo-habilidades"
+              name="modo"
+              value="Habilidades"
+              required
+            />
+            <label for="modo-habilidades">Seleção de habilidades</label>
+          </div>
+          <div class="radio-group">
+            <input
+              type="radio"
+              id="modo-outros"
+              name="modo"
+              value="Outros"
+              required
+            />
+            <label for="modo-outros">Outro</label>
+          </div>
+        </section>
+
+        <section class="section6">
+          <h2>Comportamento durante o jogo</h2>
+          <h3>Com que frequência você joga com amigos ou em equipe?</h3>
+          <div class="radio-group">
+            <input
+              type="radio"
+              id="sempre"
+              name="jogar"
+              value="sempre"
+              required
+            />
+            <label for="sempre">Sempre</label>
+          </div>
+
+          <div class="radio-group">
+            <input
+              type="radio"
+              id="as-vezes"
+              name="jogar"
+              value="as-vezes"
+              required
+            />
+            <label for="as-vezes">Às vezes</label>
+          </div>
+          <div class="radio-group">
+            <input
+              type="radio"
+              id="raramente"
+              name="jogar"
+              value="raramente"
+              required
+            />
+            <label for="raramente">Raramente</label>
+          </div>
+          <div class="radio-group">
+            <input
+              type="radio"
+              id="nunca"
+              name="jogar"
+              value="nunca"
+              required
+            />
+            <label for="nunca">Nunca</label>
+          </div>
+          <h3>Qual é o seu rank?</h3>
+
+          <section class="rank-options">
+            <div class="rank-option">
+              <input type="radio" id="sem-rank" name="rank" value="sem-rank" />
+              <label for="sem-rank">
+                <img src="img/semrank.png" alt="Não calibrado" />
+                Não calibrado
+              </label>
+            </div>
+            <div class="rank-option">
+              <input type="radio" id="arauto" name="rank" value="arauto" />
+              <label for="arauto">
+                <img src="img/arauto2.png" alt="Arauto" />
+                Arauto
+              </label>
+            </div>
+            <div class="rank-option">
+              <input type="radio" id="guardiao" name="rank" value="guardiao" />
+              <label for="guardiao">
+                <img src="img/guardian2.png" alt="Guardião" />
+                Guardião
+              </label>
+            </div>
+            <div class="rank-option">
+              <input type="radio" id="cruzado" name="rank" value="cruzado" />
+              <label for="cruzado">
+                <img src="img/cruzado2.png" alt="cruzado" />
+                Cruzado
+              </label>
+            </div>
+            <div class="rank-option">
+              <input type="radio" id="arconte" name="rank" value="arconte" />
+              <label for="arconte">
+                <img src="img/arconte2 .png" alt="arconte" />
+                Arconte
+              </label>
+            </div>
+            <div class="rank-option">
+              <input type="radio" id="Lenda" name="rank" value="Lenda" />
+              <label for="Lenda">
+                <img src="img/lenda.png" alt="Lenda" />
+                Lenda
+              </label>
+            </div>
+            <div class="rank-option">
+              <input type="radio" id="Ancient" name="rank" value="Ancient" />
+              <label for="Ancient">
+                <img src="img/ancient2.png" alt="Ancient" />
+                Ancient
+              </label>
+            </div>
+            <div class="rank-option">
+              <input type="radio" id="Divino" name="rank" value="Divino" />
+              <label for="Divino">
+                <img src="img/divino2.png" alt="Divino" />
+                Divino
+              </label>
+            </div>
+            <div class="rank-option">
+              <input type="radio" id="Divino" name="rank" value="Divino" />
+              <label for="Divino">
+                <img src="img/imortal2.png" alt="Divino" />
+                Imortal
+              </label>
+            </div>
+          </section>
+        </section>
+
+        <section class="section7">
+          <h2>Estratégias e Desempenho</h2>
+          <h3>Qual estilo de jogo você mais prefere?</h3>
+          <div class="radio-group">
+            <input type="radio" id="agressivo" value="agressivo" />
+            <label for="agressivo">Agressivo, buscando abates</label>
+          </div>
+          <div class="radio-group">
+            <input type="radio" id="focado" value="focado" />
+            <label for="focado">Focado em farm e objetivos</label>
+          </div>
+          <div class="radio-group">
+            <input type="radio" id="estrategico" value="estrategico" />
+            <label for="estrategico"
+              >Estratégico, controlando mapa e visão</label
+            >
+          </div>
+
+          <h3>
+            Você costuma assistir a guias e tutoriais de Dota 2 para melhorar
+            suas habilidades?
+          </h3>
+          <div class="radio-group">
+            <input type="radio" id="regularmente" value="regularmente" />
+            <label for="regularmente">Sim, regularmente</label>
+          </div>
+          <div class="radio-group">
+            <input type="radio" id="ocasionalmente" value="ocasionalmente" />
+            <label for="ocasionalmente">Sim, ocasionalmente</label>
+          </div>
+          <div class="radio-group">
+            <input type="radio" id="Não" value="Não" />
+            <label for="Não">Não</label>
+          </div>
+          <h3>
+            Como você classifica suas habilidades de comunicação em equipe?
+          </h3>
+          <div class="radio-group">
+            <input type="radio" id="Excelente" value="Excelente" />
+            <label for="Excelente">Excelente</label>
+          </div>
+          <div class="radio-group">
+            <input type="radio" id="Boa" value="Boa" />
+            <label for="Boa">Boa</label>
+          </div>
+          <div class="radio-group">
+            <input type="radio" id="Mediana" value="Mediana" />
+            <label for="Mediana">Mediana</label>
+          </div>
+          <div class="radio-group">
+            <input type="radio" id="Fraca" value="Fraca" />
+            <label for="Fraca">Fraca</label>
+          </div>
+
+          <h3>
+            Como você classifica suas habilidades de comunicação em equipe?
+          </h3>
+          <div class="radio-group">
+            <input type="radio" id="Voz" value="Voz" />
+            <label for="Voz">Fraca</label>
+          </div>
+          <div class="radio-group">
+            <input type="radio" id="Texto" value="Texto" />
+            <label for="Texto">Texto</label>
+          </div>
+          <div class="radio-group">
+            <input type="radio" id="Ambos" value="Ambos" />
+            <label for="Ambos">Ambos</label>
+          </div>
+          <div class="radio-group">
+            <input type="radio" id="Nenhum" value="Nenhum" />
+            <label for="Nenhum">Nenhum</label>
+          </div>
+        </section>
+
+        <section class="section8">
+          <h2>Impacto do Jogo e Opinião sobre a Comunidade.</h2>
+          <h3>Você acha a comunidade de Dota 2:</h3>
+          <div class="radio-group">
+            <input type="radio" id="muito-amigavel" value="muito-amigavel" />
+            <label for="muito-amigavel">Muito amigável</label>
+          </div>
+          <div class="radio-group">
+            <input type="radio" id="Amigável" value="Amigável" />
+            <label for="Amigável">Amigável</label>
+          </div>
+          <div class="radio-group">
+            <input type="radio" id="Neutra" value="Neutra" />
+            <label for="Neutra">Neutra</label>
+          </div>
+          <div class="radio-group">
+            <input type="radio" id="Tóxica" value="Tóxica" />
+            <label for="Tóxica">Tóxica</label>
+          </div>
+
+          <h3>
+            Você acompanha competições de eSports de Dota 2, como o The
+            International?
+          </h3>
+          <input type="radio" id="Sim-sempre" value="muito-amigavel" />
+          <label for="muito-amigavel">Sim, sempre</label>
+          <input type="radio" id="Às-vez" value="Às-vez" />
+          <label for="Às-vez">Às vez</label>
+          <input type="radio" id=" Raramente" value=" Raramente" />
+          <label for=" Raramente"> Raramente</label>
+          <input type="radio" id="Nunca" value="Nunca" />
+          <label for="Nunca">Nunca</label>
+        </section>
+
+        <section class="sectionarea">
+          <h2>Deixe sua sugestão!</h2>
+          <label for="sugestao">Por favor, compartilhe suas ideias ou feedback sobre melhorias de gameplay da sua equipe ou comunidade.</label>
+          
+          <textarea id="sugestao" name="sugestao" rows="4" cols="60" placeholder="Digite sua sugestão aqui..."></textarea>
+          
+
+    
+
+          <button type="submit">
+            <span class="button-text">Enviar</span>
+        </button>
+        
+          <!-- Botão de envio -->
+      </section>
+      
+      </form>
+    </main>
+  </body>
+</html>
