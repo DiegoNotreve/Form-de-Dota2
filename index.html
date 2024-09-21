@@ -12,22 +12,22 @@
       <source src="video/y2mate.com - Dota 2 Logo_360p.mp4" type="video/mp4" />
       Seu navegador não suporta o elemento de vídeo.
     </video>
-    <!-- Cabeçalho principal da página -->
+    
     <header>
       <h1 class="texto">
         Como você vive o Dota 2? Participe do nosso Questionário!
       </h1>
-      <!-- <img class="logo" src="img/logo-dota.png" alt="logo do dota" /> -->
+     
     </header>
     <main>
-      <!-- Formulário que contém o questionário -->
+      
       <form action="https://formspree.io/f/mkgwlrpq" method="post">
         <div class="nick">
           <label id="teste" for="nome">Nome / Nick:</label>
           <input type="text" id="name" name="nome" required />
         </div>
 
-        <!-- Pergunta com várias opções (radio buttons) -->
+      
         <h2 class="texto-principal">Experiência com o jogo</h2>
         <section class="section1">
           <h3>Há quanto tempo você joga Dota 2?</h3>
@@ -69,7 +69,7 @@
           </div>
         </section>
 
-        <!-- Pergunta com campo de seleção (dropdown) -->
+        
         <section class="section3">
           <h2>Preferências de Jogo</h2>
           <h3>Qual é a sua posição principal (role) no Dota 2?</h3>
@@ -401,15 +401,15 @@
           <h2>Estratégias e Desempenho</h2>
           <h3>Qual estilo de jogo você mais prefere?</h3>
           <div class="radio-group">
-            <input type="radio" id="agressivo" value="agressivo" />
+            <input type="radio" id="agressivo" name="estilo"  value="agressivo" />
             <label for="agressivo">Agressivo, buscando abates</label>
           </div>
           <div class="radio-group">
-            <input type="radio" id="focado" value="focado" />
+            <input type="radio" id="focado" name="estilo" value="focado" />
             <label for="focado">Focado em farm e objetivos</label>
           </div>
           <div class="radio-group">
-            <input type="radio" id="estrategico" value="estrategico" />
+            <input type="radio" id="estrategico" name="estilo"  value="estrategico" />
             <label for="estrategico"
               >Estratégico, controlando mapa e visão</label
             >
@@ -420,34 +420,34 @@
             suas habilidades?
           </h3>
           <div class="radio-group">
-            <input type="radio" id="regularmente" value="regularmente" />
+            <input type="radio" name="estilo" id="regularmente" value="regularmente" />
             <label for="regularmente">Sim, regularmente</label>
           </div>
           <div class="radio-group">
-            <input type="radio" id="ocasionalmente" value="ocasionalmente" />
+            <input type="radio" id="ocasionalmente" name="estilo" value="ocasionalmente" />
             <label for="ocasionalmente">Sim, ocasionalmente</label>
           </div>
           <div class="radio-group">
-            <input type="radio" id="Não" value="Não" />
+            <input type="radio" id="Não" name="estilo" value="Não" />
             <label for="Não">Não</label>
           </div>
           <h3>
             Como você classifica suas habilidades de comunicação em equipe?
           </h3>
           <div class="radio-group">
-            <input type="radio" id="Excelente" value="Excelente" />
+            <input type="radio" id="Excelente" name="estilo" value="Excelente" />
             <label for="Excelente">Excelente</label>
           </div>
           <div class="radio-group">
-            <input type="radio" id="Boa" value="Boa" />
+            <input type="radio" id="Boa" name="estilo"  value="Boa" />
             <label for="Boa">Boa</label>
           </div>
           <div class="radio-group">
-            <input type="radio" id="Mediana" value="Mediana" />
+            <input type="radio" id="Mediana" name="estilo"  value="Mediana" />
             <label for="Mediana">Mediana</label>
           </div>
           <div class="radio-group">
-            <input type="radio" id="Fraca" value="Fraca" />
+            <input type="radio" id="Fraca" name="estilo" value="Fraca" />
             <label for="Fraca">Fraca</label>
           </div>
 
@@ -455,19 +455,19 @@
             Como você classifica suas habilidades de comunicação em equipe?
           </h3>
           <div class="radio-group">
-            <input type="radio" id="Voz" value="Voz" />
+            <input type="radio" id="Voz" name="estilo"  value="Voz" />
             <label for="Voz">Fraca</label>
           </div>
           <div class="radio-group">
-            <input type="radio" id="Texto" value="Texto" />
+            <input type="radio" id="Texto" name="estilo"  value="Texto" />
             <label for="Texto">Texto</label>
           </div>
           <div class="radio-group">
-            <input type="radio" id="Ambos" value="Ambos" />
+            <input type="radio" id="Ambos" name="estilo" value="Ambos" />
             <label for="Ambos">Ambos</label>
           </div>
           <div class="radio-group">
-            <input type="radio" id="Nenhum" value="Nenhum" />
+            <input type="radio" id="Nenhum" name="estilo"  value="Nenhum" />
             <label for="Nenhum">Nenhum</label>
           </div>
         </section>
@@ -476,19 +476,19 @@
           <h2>Impacto do jogo e opinião sobre a comunidade.</h2>
           <h3>Você acha a comunidade de Dota 2:</h3>
           <div class="radio-group">
-            <input type="radio" id="muito-amigavel" value="muito-amigavel" />
+            <input type="radio" id="muito-amigavel" name="estilo" value="muito-amigavel" />
             <label for="muito-amigavel">Muito amigável</label>
           </div>
           <div class="radio-group">
-            <input type="radio" id="Amigável" value="Amigável" />
+            <input type="radio" id="Amigável" name="estilo" value="Amigável" />
             <label for="Amigável">Amigável</label>
           </div>
           <div class="radio-group">
-            <input type="radio" id="Neutra" value="Neutra" />
+            <input type="radio" id="Neutra" name="estilo" value="Neutra" />
             <label for="Neutra">Neutra</label>
           </div>
           <div class="radio-group">
-            <input type="radio" id="Tóxica" value="Tóxica" />
+            <input type="radio" id="Tóxica" name="estilo" value="Tóxica" />
             <label for="Tóxica">Tóxica</label>
           </div>
 
@@ -497,19 +497,20 @@
             International?
           </h3>
           <div class="radio-group">
-          <input type="radio" id="Sim-sempre" value="muito-amigavel" />
+          <input type="radio" id="Sim-sempre" name="estilo" value="muito-amigavel" />
           <label for="muito-amigavel">Sim, sempre</label>
         </div>
         <div class="radio-group">
-          <input type="radio" id="Às-vez" value="Às-vez" />
+          <input type="radio" id="Às-vez" name="estilo"  value="Às-vez" />
           <label for="Às-vez">Às vez</label>
         </div>
         <div class="radio-group">
-          <input type="radio" id=" Raramente" value=" Raramente" />
+          <input type="radio" id=" Raramente" name="estilo" value=" Raramente" />
           <label for=" Raramente"> Raramente</label>
         </div>
         <div class="radio-group">
-          <input type="radio" id="Nunca" value="Nunca" />
+          <input type="radio" id="Nunca" name="estilo"
+           value="Nunca" />
           <label for="Nunca">Nunca</label>
         </div>
         </section>
