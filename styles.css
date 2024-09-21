@@ -5,11 +5,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 body {
   height: 100vh;
+  font-family: "Rowdies", sans-serif; /* Adicionando uma fonte padrão */
 }
 
 #background-video {
@@ -96,7 +96,6 @@ h3 {
   -webkit-background-clip: text;
   color: transparent;
   background-clip: text;
-
   -webkit-text-stroke-width: 0.1px;
   -webkit-text-stroke-color: black;
 }
@@ -108,18 +107,12 @@ h3 {
 }
 
 form {
-  /* background-image: url('https://steamuserimages-a.akamaihd.net/ugc/581280502713388408/4954C7A5550740AA45FFC973AF97C7DED6EA692C/?imw=512&amp;imh=288&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fiAxed; */
   backdrop-filter: blur(10px);
   max-width: 600px;
   margin: 0 auto;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  /* border: 2px solid black; */
   height: auto;
 }
 
@@ -131,7 +124,7 @@ label {
 
 input[type="text"],
 select {
-  width: 50%;
+  width: 100%; /* Ajuste para ocupar 100% do espaço disponível */
   padding: 0.5rem;
   margin-bottom: 1rem;
   border: 2px solid #000000;
@@ -145,7 +138,7 @@ select:focus {
   box-shadow: 0 0 5px #db3a12;
 }
 
-section{
+section {
   padding: 20px;
   position: relative;
 }
@@ -160,7 +153,8 @@ section::after {
   background-color: #fff;
 }
 
-.section3::after, .section4::after{
+.section3::after,
+.section4::after {
   content: none;
 }
 
@@ -185,10 +179,10 @@ section::after {
 }
 
 /* CONFIG DAS MEDALHAS */
-
-.rank-options::after{
+.rank-options::after {
   content: none;
 }
+
 .rank-options {
   display: flex;
   flex-wrap: wrap;
@@ -196,18 +190,18 @@ section::after {
   align-items: center;
   gap: 2rem;
 }
+
 .rank-option {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
+
 .rank-option img {
   width: 24px; /* Ajuste o tamanho conforme necessário */
   height: 24px;
   margin-right: 0.5rem;
 }
-/* .rank-option input[type="radio"] {
-    display: none;  */
 
 .rank-option label {
   cursor: pointer;
@@ -219,23 +213,23 @@ section::after {
   text-align: center;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgb(0, 0, 0); /* Sombra suave */
+  box-shadow: 0 2px 10px rgb(0, 0, 0);
   max-width: 600px;
-  margin: 20px auto; /* Centralizar na página */
+  margin: 20px auto;
 }
 
-.sectionarea::after{
+.sectionarea::after {
   content: none;
 }
 
 textarea {
   width: 100%;
-  padding: 10px; /* Espaçamento interno */
-  border: 1px solid #ccc; /* Borda */
-  border-radius: 4px; /* Bordas arredondadas */
-  font-size: 14px; /* Tamanho da fonte */
-  resize: none; /* Desabilitar redimensionamento */
-  transition: border-color 0.3s; /* Transição suave para foco */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  resize: none;
+  transition: border-color 0.3s;
 }
 
 textarea:focus {
@@ -248,15 +242,15 @@ button {
   font-weight: 900;
   font-size: 20px;
   border: none;
-  border-radius: 4px; /* Bordas arredondadas */
-  padding: 10px 15px; /* Espaçamento interno */
-  cursor: pointer; /* Mão ao passar o mouse */
-  position: relative; /* Para posicionar elementos internos */
-  overflow: hidden; /* Para evitar transbordamento */
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
   background-color: #fff;
   margin: 15px;
- transition: 0.2s;
- text-decoration: none;
+  transition: 0.2s;
+  text-decoration: none;
 }
 
 .button-text {
@@ -265,21 +259,82 @@ button {
   -webkit-background-clip: text;
   color: transparent;
   background-clip: text;
-  display: inline-block; /* Para garantir que o efeito funcione */
+  display: inline-block;
 }
 
-button:hover{
+button:hover {
   transform: scale(1.05);
-  
 }
 
 body:after {
-	content: "";
-	min-height: 100vh;
-	width: 100vw;
-	position: fixed;
-	top: 0;
-	left: 0;
-	background: linear-gradient(120deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.05926120448179273) 50%, rgba(0, 0, 0, 1) 90%);
-	z-index: -1;
+  content: "";
+  min-height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(120deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.05926120448179273) 50%, rgba(0, 0, 0, 1) 90%);
+  z-index: -1;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px; 
+  }
+
+  form{
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 28px; 
+  }
+
+  .nick input[type="text"],
+  input[type="text"],
+  select {
+    width: 100%; 
+  }
+
+  button {
+    font-size: 18px; 
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px; 
+  }
+
+  form{
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 40px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .nick input[type="text"],
+  input[type="text"],
+  select {
+    padding: 0.3rem; /* Reduzir o padding em telas menores */
+  }
+
+  button {
+    font-size: 16px; /* Ajuste o tamanho do botão para telas menores */
+    padding: 8px 10px; /* Ajustar o padding do botão */
+  }
 }
