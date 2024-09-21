@@ -88,16 +88,12 @@ h2 {
 }
 
 h3 {
-  font-family: "Protest Guerrilla", system-ui;
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
   font-weight: 800;
   padding: 5px 10px;
-  background: url("img/logofechada.jpeg") no-repeat center;
-  background-size: cover;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-clip: text;
-  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: black;
+  color: #fff;
 }
 
 .nick {
