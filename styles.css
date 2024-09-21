@@ -35,14 +35,7 @@ header {
   font-size: 30px;
   font-weight: 800;
   text-align: center;
-  background: url("img/logofechada.jpeg") no-repeat center;
-  background-size: cover;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-clip: text;
-  margin: 20px;
-  -webkit-text-stroke-width: 0.1px;
-  -webkit-text-stroke-color: black;
+  color: #000000;
 }
 
 .nick input[type="text"] {
@@ -75,16 +68,9 @@ h2 {
   font-weight: 800;
   font-size: 40px;
   padding: 5px 10px;
-  background: url("img/logofechada.jpeg") no-repeat center;
-  background-size: cover;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-clip: text;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  -webkit-text-stroke-width: 0.1px;
-  -webkit-text-stroke-color: black;
+  text-align: center;
+  
+  
 }
 
 h3 {
@@ -93,13 +79,14 @@ h3 {
   padding: 5px 10px;
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: black;
-  color: #fff;
+  
 }
 
 .nick {
   display: flex;
   flex-direction: column;
   align-items: center;
+ 
 }
 
 form {
@@ -110,12 +97,13 @@ form {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   height: auto;
+  border: 1px solid black;
 }
 
 label {
   display: block;
   margin-bottom: 0.5rem;
-  color: #fff;
+ 
 }
 
 input[type="text"],
@@ -125,6 +113,7 @@ select {
   margin-bottom: 1rem;
   border: 2px solid #000000;
   border-radius: 4px;
+  
 }
 
 input[type="text"]:focus,
@@ -146,7 +135,7 @@ section::after {
   left: 0;
   width: 100%;
   height: 4px;
-  background-color: #fff;
+  background-color: #000000;
 }
 
 .section3::after,
@@ -163,7 +152,7 @@ section::after {
 .radio-group {
   display: flex;
   align-items: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .radio-group label {
@@ -262,16 +251,7 @@ button:hover {
   transform: scale(1.05);
 }
 
-body:after {
-  content: "";
-  min-height: 100vh;
-  width: 100vw;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: linear-gradient(120deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.05926120448179273) 50%, rgba(0, 0, 0, 1) 90%);
-  z-index: -1;
-}
+
 
 /* Responsividade */
 @media (max-width: 768px) {
@@ -285,6 +265,11 @@ body:after {
 
   h2 {
     font-size: 28px; 
+    
+  }
+
+  h3{
+    margin: 20px;
   }
 
   .nick input[type="text"],
@@ -321,6 +306,10 @@ body:after {
     align-items: center;
     text-align: center;
     font-size: 25px;
+    
+  }
+  h3{
+    margin: 20px;
   }
 
   .nick input[type="text"],
