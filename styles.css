@@ -301,16 +301,13 @@ button:hover {
   }
 
   h3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     text-align: center;
     font-size: 25px;
+    margin: 20px;
     
   }
-  h3{
-    margin: 20px;
-  }
+  
 
   .nick input[type="text"],
   input[type="text"],
